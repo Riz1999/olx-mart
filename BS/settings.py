@@ -86,21 +86,21 @@ WSGI_APPLICATION = 'BS.wsgi.application'
 # DATABASES = {
 #     "default": dj_database_url.config(default=DATABASE_URL,conn_max_age=1800),
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bsdb',
-        'USER': 'postgres',
-        'PASSWORD': 'Woxsen19@',
-        'HOST': 'localhost'
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'bsdb',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Woxsen19@',
+#         'HOST': 'localhost'
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
+    }
+}
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 
