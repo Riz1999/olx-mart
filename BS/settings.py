@@ -16,7 +16,7 @@ import dj_database_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DATABASE_URL ="postgresql://postgres:xT2HdPASiL6Y830o99Au@containers-us-west-145.railway.app:6702/railway"
+#DATABASE_URL ="postgresql://postgres:xT2HdPASiL6Y830o99Au@containers-us-west-145.railway.app:6702/railway"
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
@@ -83,18 +83,18 @@ WSGI_APPLICATION = 'BS.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 
-DATABASES = {
-    "default": dj_database_url.config(default=DATABASE_URL,conn_max_age=1800),
-}
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'bsdb',
-#         'USER': 'postgres',
-#         'PASSWORD': 'Woxsen19@',
-#         'HOST': 'localhost'
-#     }
+#     "default": dj_database_url.config(default=DATABASE_URL,conn_max_age=1800),
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bsdb',
+        'USER': 'postgres',
+        'PASSWORD': 'Woxsen19@',
+        'HOST': 'localhost'
+    }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
