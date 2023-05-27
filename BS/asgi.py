@@ -1,16 +1,16 @@
-# """
-# ASGI config for railwaydeploy project.
+"""
+ASGI config for railwaydeploy project.
 
-# It exposes the WSGI callable as a module-level variable named ``application``.
+It exposes the WSGI callable as a module-level variable named ``application``.
 
-# For more information on this file, see
-# https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
-# """
+For more information on this file, see
+https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
+"""
 
-# import os
+import os
 
-# from django.core.asgi import get_asgi_application
+from django.core.asgi import get_asgi_application
 
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BS.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BS.settings')
 
-# application = get_asgi_application()
+application = get_asgi_application()
